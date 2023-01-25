@@ -11,7 +11,7 @@ export default function Player({
   // selectedCard,
   // to,
 }) {
-  const { to, setTo, setFrom, selectedCard, setSelectedCard } = useGameContext();
+  const { to, setTo } = useGameContext();
   return (
     <div
       className={`player ${to === player ? 'selected-player' : ''}`}
