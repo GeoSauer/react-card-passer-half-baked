@@ -28,7 +28,7 @@ function App() {
     setDeck,
     selectedCard,
     setSelectedCard,
-  } = useGameContext;
+  } = useGameContext();
 
   function findCardIndex(value, suit, cards) {
     return cards.findIndex((card) => card.value === value && card.suit === suit);
